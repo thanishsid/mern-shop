@@ -1,10 +1,21 @@
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomeScreen from './screens/HomeScreen';
+import { Container } from 'react-bootstrap';
+
 import './App.css';
 
 const App = () => {
   return (
-    <div className='App'>
-      <h1>Welcome to Gadget Monke</h1>
-    </div>
+    <>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+      <Footer />
+    </>
   );
 };
 
